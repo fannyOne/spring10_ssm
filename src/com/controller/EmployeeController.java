@@ -21,6 +21,7 @@ public class EmployeeController {
 	@RequestMapping("/login.html")
 	public String doLogin(Employee employee,Model model){
 		employee = empDao.select(employee);
+		Sssssss
 		if(employee==null){
 			model.addAttribute("message", "用户名或密码错误");
 			return "forward:/login.jsp";
